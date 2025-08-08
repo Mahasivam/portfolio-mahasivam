@@ -11,7 +11,7 @@ export const projects = [
   {
     title: 'AppQwis',
     description:"AppQwis is a quiz and exam platform I built during my GET training at Renault Nissan for the L&D department. It enables easy quiz creation, exam conduction, and result evaluation for students and employees. The project helped me explore advanced Angular and Spring Boot concepts, along with JWT integration for secure application.",
-    image: '/images/AppQwis.png',
+    image: '/images/app.png',
     tags: ['Angular', 'SpringBoot', 'MySQL', 'JWT'],
     source: 'https://github.com/Mahasivam/AppQwis',
     visit: 'https://app-qwis-rho.vercel.app/login',

@@ -82,35 +82,103 @@ export const ListTitle = styled.h4`
 `
 
 export const ListParagraph = styled.p`
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
-  color: rgba(255, 255, 255, 0.75);
-
-  @media ${props => props.theme.breakpoints.md}{
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 16px;
+  padding: 0.2rem 0;
+  text-align: center;
+  
+  @media ${props => props.theme.breakpoints.md} {
     font-size: 16px;
     line-height: 28px;
+    padding: 0.1rem 0;
   }
-
-  @media ${props => props.theme.breakpoints.sm}{
+  
+  @media ${props => props.theme.breakpoints.sm} {
     font-size: 14px;
     line-height: 22px;
   }
 `
 
 export const ListItem = styled.li`
-  max-width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  @media ${props => props.theme.breakpoints.md} {
+    padding: 0 15px;
+  }
+  
+  @media ${props => props.theme.breakpoints.sm} {
+    padding: 0 10px;
+  }
+`
 
-@media ${props => props.theme.breakpoints.md}{
-  max-width: 203px;
-}
+export const ListGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  
+  @media ${props => props.theme.breakpoints.lg}{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media ${props => props.theme.breakpoints.md}{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  @media ${props => props.theme.breakpoints.sm}{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+`
 
-@media ${props => props.theme.breakpoints.sm}{
-  margin-bottom: 14px;
-  max-width: 320px;
-  flex-direction: row;
-}
+export const SkillItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  svg {
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  @media ${props => props.theme.breakpoints.md}{
+    padding: 10px 5px;
+    
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    
+    span {
+      font-size: 12px;
+    }
+  }
 `
 
 export const ListIcon = styled.img`

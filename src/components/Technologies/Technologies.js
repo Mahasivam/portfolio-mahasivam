@@ -12,7 +12,15 @@ import {
 } from 'react-icons/si';
 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { 
+  List, 
+  ListContainer, 
+  ListItem, 
+  ListParagraph, 
+  ListTitle,
+  ListGrid,
+  SkillItem
+} from './TechnologiesStyles';
 
 const Technologies = () => (
     <Section id="tech">
@@ -26,74 +34,70 @@ const Technologies = () => (
         <ListItem>
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
-            <ListParagraph>
-              <FaHtml5 size="3rem" /><br />HTML5
-            </ListParagraph>
-            <ListParagraph>
-              <FaCss3Alt size="3rem" /><br />CSS3
-            </ListParagraph>
-            <ListParagraph>
-              <FaJsSquare size="3rem" /><br />JavaScript
-            </ListParagraph>
-            <ListParagraph>
-              <FaBootstrap size="3rem" /><br />Bootstrap
-            </ListParagraph>
-            <ListParagraph>
-              <FaAngular size="3rem" /><br />Angular
-            </ListParagraph>
-            <ListParagraph>
-              <FaReact size="3rem" /><br />React.js
-            </ListParagraph>
+            <ListGrid>
+              <SkillItem>
+                <FaHtml5 size="3rem" />
+                <span>HTML5</span>
+              </SkillItem>
+              <SkillItem>
+                <FaCss3Alt size="3rem" />
+                <span>CSS3</span>
+              </SkillItem>
+              <SkillItem>
+                <FaJsSquare size="3rem" />
+                <span>JavaScript</span>
+              </SkillItem>
+              <SkillItem>
+                <FaBootstrap size="3rem" />
+                <span>Bootstrap</span>
+              </SkillItem>
+              <SkillItem>
+                <FaAngular size="3rem" />
+                <span>Angular</span>
+              </SkillItem>
+              <SkillItem>
+                <FaReact size="3rem" />
+                <span>React.js</span>
+              </SkillItem>
+            </ListGrid>
           </ListContainer>
         </ListItem>
         <ListItem>
           <ListContainer>
             <ListTitle>Back-End & Databases</ListTitle>
-            <ListParagraph>
-              <FaJava size="3rem" /><br />Java
-            </ListParagraph>
-            <ListParagraph>
-              <SiSpringboot size="3rem" /><br />Spring Boot
-            </ListParagraph>
-            <ListParagraph>
-              <FaPython size="3rem" /><br />Python
-            </ListParagraph>
-            <ListParagraph>
-              <SiTensorflow size="3rem" /><br />TensorFlow
-            </ListParagraph>
-            <ListParagraph>
-              <SiMysql size="3rem" /><br />MySQL
-            </ListParagraph>
-            <ListParagraph>
-              <SiPostgresql size="3rem" /><br />PostgreSQL
-            </ListParagraph>
-            <ListParagraph>
-              <SiMongodb size="3rem" /><br />MongoDB
-            </ListParagraph>
+            <ListGrid>
+              <SkillItem>
+                <FaJava size="3rem" />
+                <span>Java</span>
+              </SkillItem>
+              <SkillItem>
+                <SiSpringboot size="3rem" />
+                <span>Spring Boot</span>
+              </SkillItem>
+              <SkillItem>
+                <FaPython size="3rem" />
+                <span>Python</span>
+              </SkillItem>
+              <SkillItem>
+                <SiTensorflow size="3rem" />
+                <span>TensorFlow</span>
+              </SkillItem>
+              <SkillItem>
+                <SiMysql size="3rem" />
+                <span>MySQL</span>
+              </SkillItem>
+              <SkillItem>
+                <SiPostgresql size="3rem" />
+                <span>PostgreSQL</span>
+              </SkillItem>
+              <SkillItem>
+                <SiMongodb size="3rem" />
+                <span>MongoDB</span>
+              </SkillItem>
+            </ListGrid>
           </ListContainer>
         </ListItem>
         <ListItem>
-          <ListContainer>
-            <ListTitle>CI/CD & Tools</ListTitle>
-            <ListParagraph>
-              <FaJenkins size="3rem" /><br />Jenkins
-            </ListParagraph>
-            <ListParagraph>
-              <FaGitlab size="3rem" /><br />GitLab CI/CD
-            </ListParagraph>
-            <ListParagraph>
-              <SiIntellijidea size="3rem" /><br />IntelliJ IDEA
-            </ListParagraph>
-            <ListParagraph>
-              <SiVisualstudiocode size="3rem" /><br />VS Code
-            </ListParagraph>
-            <ListParagraph>
-              <SiJira size="3rem" /><br />Jira
-            </ListParagraph>
-            <ListParagraph>
-              <SiConfluence size="3rem" /><br />Confluence
-            </ListParagraph>
-          </ListContainer>
         </ListItem>
       </List>
       <SectionDivider colorAlt />
