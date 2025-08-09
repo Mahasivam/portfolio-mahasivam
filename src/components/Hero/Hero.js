@@ -13,9 +13,9 @@ const Hero = (props) => (
           My Portfolio
         </SectionTitle>
         <SectionText>
-          I'm a Software Engineer who is excited to work with new technologies and languages, especially Generative AI. I design smart software solutions to enhance and innovate applications in the real-world.
+          Building fast, reliable, and user-friendly applications for the modern web.<br/>
+          Passionate about solving problems through technology.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
       </LeftSection>
     </Section>
   </>
