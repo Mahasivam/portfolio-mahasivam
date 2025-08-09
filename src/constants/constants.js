@@ -38,8 +38,7 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2022, text: 'Started my journey', },
-  { year: 2022, text: 'Worked as a GRADUATE ENGINEER TRAINEE (GET)', },
+  { year: 2022, text: 'Started my journey as Graduate Engineer Trainee (GET)', },
   { year: 2023, text: 'Promoted as Software Engineer - Full-Stack development', },
   { year: 2024, text: 'Continuing as an Engineer, working on Generative AI workflows', },
 ];
